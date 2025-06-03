@@ -1,35 +1,43 @@
-/* src/components/intro.css */
-
 .intro-section {
-    background: #f8f9fa; /* light gray */
-    min-height: 80vh;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Optional: add dark overlay for better text visibility */
+  .intro-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
   }
   
   .intro-title {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #212529;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    color: #fff;
   }
   
-  .intro-title .highlight {
-    color: #007bff; /* Bootstrap blue */
+  .highlight {
+    color: #0d6efd; /* Bootstrap blue */
   }
   
   .btn-primary {
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
   }
   
