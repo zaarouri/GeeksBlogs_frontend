@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import logo from '../assets/geeks-logo.jpg'; // Make sure the image exists in this path
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -22,6 +23,7 @@ const Navbar = () => {
         <li><i className="bi bi-person-circle"></i></li>
         <li><i className="bi bi-bell"></i></li>
         <li><i className="bi bi-gear"></i></li>
+        <Link to="/login">Logout</Link>
       </ul>
     </nav>
   );
