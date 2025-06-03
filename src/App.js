@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Intro from '../src/components/intro';
-import Features from '../src/components/Features';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Intro />
       < Features/>
-      
+      <Blog/>
     </div>
   );
 }
