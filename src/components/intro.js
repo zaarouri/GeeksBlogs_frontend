@@ -1,21 +1,14 @@
 import React from 'react';
-import '/Users/mac/geeksblogs/src/components/intro.js';
+import './intro.css';
 
 const Intro = () => {
   return (
-    <section className="intro-section" id="intro">
-      <div className="intro-content container">
-        <div className="intro-text">
-          <h1>As a Geek you will not find a better App</h1>
-          <p>
-            GeeksBlogs gives you access to tutorials, examples, and features tailored for modern developers.
-            Start your journey today and build smarter, faster, and stronger!
-          </p>
-          <a href="#features" className="btn btn-primary mt-3">Get Started</a>
-        </div>
-        <div className="intro-image">
-          <img src="/images/intro.jpg" alt="Intro" />
-        </div>
+    <section className="intro-section d-flex align-items-center">
+      <div className="container text-center">
+        <h1 className="intro-title">
+          As a <span className="highlight">Geek</span>, you will not find a better App
+        </h1>
+        <button className="btn btn-primary btn-lg mt-4">Get Started</button>
       </div>
     </section>
   );

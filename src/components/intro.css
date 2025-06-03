@@ -1,40 +1,35 @@
+/* src/components/intro.css */
+
 .intro-section {
-    padding: 4rem 0;
-    background-color: #f8f9fa;
-  }
-  
-  .intro-content {
+    background: #f8f9fa; /* light gray */
+    min-height: 80vh;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
   }
   
-  .intro-text {
-    flex: 1 1 45%;
-  }
-  
-  .intro-text h1 {
+  .intro-title {
     font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #212529;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
   
-  .intro-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #333;
+  .intro-title .highlight {
+    color: #007bff; /* Bootstrap blue */
   }
   
-  .intro-image {
-    flex: 1 1 45%;
-    text-align: center;
+  .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
   }
   
-  .intro-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  .btn-primary:hover {
+    background-color: #0056b3;
   }
   
