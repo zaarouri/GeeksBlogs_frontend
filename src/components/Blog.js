@@ -32,6 +32,7 @@ function Blog() {
           {blogPosts.map((post) => (
             <BlogCard
               key={post.id}
+              id={post.id}
               title={post.title}
               description={post.description}
               image={post.image}
@@ -44,3 +45,4 @@ function Blog() {
 }
 
 export default Blog;
+export { blogPosts }; 
