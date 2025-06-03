@@ -45,3 +45,4 @@ function Blog() {
 }
 
 export default Blog;
+export { blogPosts }; 
