@@ -1,23 +1,26 @@
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
   
   .logo {
-    font-size: 1.75rem;
-    padding-left: 3rem;
-    font-weight: bold;
-    color: #007BFF; /* Blue logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .logo:hover {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #007BFF; /* Blue logo */
-
+  
+  .logo-img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5rem;
   }
   
   .nav-links {
@@ -25,8 +28,8 @@
     display: flex;
     gap: 1.5rem;
     margin: 0;
-    padding: 0 ;
-    padding-right: 3rem;
+    padding: 0;
+    align-items: center;
   }
   
   .nav-links a {
@@ -37,6 +40,16 @@
   }
   
   .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  .nav-links i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-links i:hover {
     color: #007BFF;
   }
   
