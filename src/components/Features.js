@@ -4,13 +4,28 @@ import './Feature.css';
 
 function Features() {
   return (
-    
-      <div className='features-grid'>
-        <Feature />
-        <Feature />
-        <Feature />
-        <Feature />
+    <div className="container py-5">
+      <div className="row gy-4">
+        <div className="col-md-6 col-lg-4">
+          <Feature />
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <Feature />
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <Feature />
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <Feature />
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <Feature />
+        </div>
+        <div className="col-md-6 col-lg-4">
+          <Feature />
+        </div>
       </div>
+    </div>
   );
 }
 

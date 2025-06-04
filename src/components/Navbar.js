@@ -1,26 +1,35 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/geeks-logo.jpg'; // Make sure the image exists in this path
+import logo from '../assets/geeks-logo.jpg';
 
-const Navbar = () => {
+const Navbar = ({ setShowFeatures }) => {
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    setShowFeatures(false);
+    navigate('/home');
+  };
+
+  const goToFeatures = () => {
+    setShowFeatures(true);
+    navigate('/home');
+  };
+
   return (
     <nav className="navbar">
-      {/* Left side links */}
       <ul className="nav-links">
-        <li><a href="#intro"><i className="bi bi-house-door"></i> Intro</a></li>
-        <li><a href="#features"><i className="bi bi-grid"></i> Features</a></li>
-        <li><a href="#examples"><i className="bi bi-images"></i> Examples</a></li>
+        <li><a onClick={goHome}><i className="bi bi-house-door"></i> Home</a></li>
+        <li><a onClick={() => navigate('/blog')}><i className="bi bi-grid"></i> Blog</a></li>
+        <li><a onClick={goToFeatures}><i className="bi bi-images"></i> Article 1</a></li>
       </ul>
 
-      {/* Center logo */}
       <div className="logo">
         <img src={logo} alt="GeeksBlogs Logo" className="logo-img" />
       </div>
 
-      {/* Right side icons */}
       <ul className="nav-links">
         <li><i className="bi bi-person-circle"></i></li>
-        <li><i className="bi bi-bell"></i></li>
         <li><i className="bi bi-gear"></i></li>
       </ul>
     </nav>
