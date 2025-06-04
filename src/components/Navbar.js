@@ -21,7 +21,7 @@ const Navbar = ({ setShowFeatures }) => {
       <ul className="nav-links">
         <li><a onClick={goHome}><i className="bi bi-house-door"></i> Home</a></li>
         <li><a onClick={() => navigate('/blog')}><i className="bi bi-grid"></i> Blog</a></li>
-        <li><a onClick={goToFeatures}><i className="bi bi-images"></i> Article 1</a></li>
+        <li><a onClick={goToFeatures}><i className="bi bi-images"></i> Article</a></li>
       </ul>
 
       <div className="logo">
