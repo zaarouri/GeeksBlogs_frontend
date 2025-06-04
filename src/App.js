@@ -5,6 +5,7 @@ import Intro from './components/intro';
 import Features from './components/Features';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
+import Footer from './components/Footer'; // <-- Add this import
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
@@ -14,19 +15,15 @@ function App() {
     <Router>
       <Navbar setShowFeatures={setShowFeatures} />
       <Routes>
-        <Route
-          path="/"
-          element={<Navigate to="/home" />}
-        />
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route
           path="/home"
-          element={
-            showFeatures ? <Features /> : <Intro />
-          }
+          element={showFeatures ? <Features /> : <Intro />}
         />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
+      <Footer /> 
     </Router>
   );
 }

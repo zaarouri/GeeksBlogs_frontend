@@ -1,0 +1,38 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.footer {
+  background-color: #c5c0c0;
+  color: rgb(5, 18, 77);
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: rgb(4, 0, 54);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
